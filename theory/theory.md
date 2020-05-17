@@ -8,3 +8,6 @@
 
 - Implement and play around with a linked list.
   - Do some linked list exercises. 
+
+- Implement and play around with a hash table (hash map)
+  - Having done enough exercises to be able to appreciate the simplicity and beauty of the hash table would be great.
