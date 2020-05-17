@@ -2,7 +2,7 @@ class IntegerList{
     //implement a flexible length list of integers.
 
     private int[] intArr;
-    private int arrayLength;
+    private int arrayLength; // didn't really need it!
     private int end; // Will mean the index of the last available position.
 
     private final int INIT_LENGTH = 5;
@@ -30,6 +30,33 @@ class IntegerList{
         // Add the number to the list.
         intArr[end] = newNumber;
         end = end + 1;
+    }
+
+    // Add the new number at the given index and shift all other number to the right.
+    public void add(int index, int newNumber){
+        // Check if the list is full.
+        if (end == arrayLength) {
+            // list is full, do something!
+            expandList();
+        }
+
+        // shift elements (from index to the end) to the right by 1 and then add our newNumber at the index.
+        // [x,x,x,x,x,i,y,z,0,0,0,0]
+        // [x,x,x,x,x,N,i,y,z,0,0,0] This is what we want in the end.
+        
+        System.out.println("Debugging integer list");
+        for(int i = end-1; i >= index; i--){
+            
+           //System.out.println(i); 
+
+           intArr[i+1] = intArr[i]; // (just copied the primitive.)
+        }
+
+        // Add the number to the list.
+        intArr[index] = newNumber;
+        end = end + 1;
+
+        System.out.println("END : Debugging integer list");
     }
 
     private void expandList(){

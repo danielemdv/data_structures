@@ -13,25 +13,6 @@ class Sandbox{
 
     public void otherMain(){
 
-
-        // Cat cat1 = new Cat("Juan", "Perez");
-
-        // cat1.printData();
-
-        // Cat[] catArray = new Cat[3]; // init array
-
-        // Cat cat2 = new Cat("Cat2", "a");
-
-        // cat2.printData();
-
-        // // meter al arreglo
-
-        // catArray[0] = cat1;
-        // catArray[1] = cat2;
-
-        // System.out.println(cat1);
-        // System.out.println(catArray[1]);
-
         //  - - - - - - 
 
         //NumberList stuff:
@@ -49,6 +30,10 @@ class Sandbox{
         il.add(4);
         il.add(4);
 
+        // TESTS
+        System.out.println("Before indexed add: " + il.stringInternals());
+        il.add(3, 99);
+        // ----
         System.out.println(il.length());
 
         try{
@@ -71,7 +56,7 @@ class Sandbox{
         System.out.println(il.stringInternals());
 
 
-        List<Integer> al = new ArrayList<Integer>();
+        ArrayList<Integer> al = new ArrayList<Integer>();
         al.add(56);
         al.add(56);
         al.add(85);
@@ -80,8 +65,6 @@ class Sandbox{
 
 
         System.out.println(al.size());
-
-
 
     }
 
