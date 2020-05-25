@@ -11,3 +11,5 @@
 
 - Implement and play around with a hash table (hash map)
   - Having done enough exercises to be able to appreciate the simplicity and beauty of the hash table would be great.
+
+- Order the topics better... Structure them and make them easy to follow.
